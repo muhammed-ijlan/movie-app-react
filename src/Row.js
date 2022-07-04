@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { instance } from './config'
+import Topbar from './Navbar'
 
 
 export default function Home({ title, fetchUrl }) {
@@ -12,9 +13,12 @@ export default function Home({ title, fetchUrl }) {
 
         }
         fetchMovies()
-    }, [])
+    }, [fetchUrl])
+
     console.log(movies);
     return (
-        <div>{title}</div>
+        <div>
+            <Topbar />
+        </div>
     )
 }
