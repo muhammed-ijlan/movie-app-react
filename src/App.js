@@ -1,12 +1,12 @@
 import React from 'react'
-import request from './axios'
-import Home from './Home'
-import api from './request'
+
+import Row from './Row'
+import requests from './request'
 
 export default function App() {
   return (
     <div>
-      <Home api={api.fetchNetflixOriginals} />
+      <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} />
     </div>
   )
 }
