@@ -1,0 +1,21 @@
+.banner {
+  height: 558px;
+  object-fit: contain;
+  color: white;
+  position: relative;
+}
+
+.bannerContents {
+  position: absolute;
+  top: 300px;
+}
+.buttons button {
+  color: white;
+  background-color: #222;
+  border: none;
+  margin-right: 10px;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
