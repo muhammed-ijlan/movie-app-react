@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Banner.css'
-import { instance } from './config'
-import requests from './request'
+import { instance } from '../../config'
+import requests from '../../request'
 
 export default function Banner() {
     const [movie, setMovie] = useState([])

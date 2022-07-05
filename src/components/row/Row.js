@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { instance } from './config'
 import './Row.css'
+import { instance } from './../../config';
 
 export default function Home({ title, fetchUrl, isLargeRow }) {
     const [movies, setMovies] = useState([])
